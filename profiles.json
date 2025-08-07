@@ -1,0 +1,785 @@
+{
+  "deviceArchetypes": [
+    {
+      "name": "Windows 11 High-End Gaming PC 2024",
+      "weight": 0.05,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i9": 60, "AMD Ryzen 9": 40 },
+        "ram": { "32": 60, "64": 40 },
+        "gpu": { "NVIDIA GeForce RTX 4090": 50, "NVIDIA GeForce RTX 4080": 30, "AMD Radeon RX 7900 XTX": 20 }
+      },
+      "display": { "resolutions": ["2560x1440", "3840x2160"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Courier New", "Georgia", "Lucida Console", "Segoe UI", "Tahoma", "Times New Roman", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36",
+      "plugins": ["PDF Viewer", "Chrome Media Router", "Webstore"]
+    },
+    {
+      "name": "Windows 11 Mid-Range Gaming PC 2023",
+      "weight": 0.15,
+      "platform": "Win32",
+      "os": { "Windows 11": 90, "Windows 10": 10 },
+      "hardware": {
+        "cpu": { "Intel Core i7": 50, "AMD Ryzen 7": 50 },
+        "ram": { "16": 70, "32": 30 },
+        "gpu": { "NVIDIA GeForce RTX 4070": 40, "NVIDIA GeForce RTX 4060 Ti": 30, "AMD Radeon RX 7800 XT": 30 }
+      },
+      "display": { "resolutions": ["1920x1080", "2560x1440"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en", "es-US"] },
+      "fonts": ["Arial", "Calibri", "Courier New", "Georgia", "Lucida Console", "Segoe UI", "Tahoma", "Times New Roman", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Budget Gaming PC 2021",
+      "weight": 0.10,
+      "platform": "Win32",
+      "os": { "Windows 10": 70, "Windows 11": 30 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 60, "AMD Ryzen 5": 40 },
+        "ram": { "16": 80, "8": 20 },
+        "gpu": { "NVIDIA GeForce RTX 3060": 50, "NVIDIA GeForce RTX 2060": 30, "AMD Radeon RX 6600": 20 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["es-ES", "es"] },
+      "fonts": ["Arial", "Calibri", "Courier New", "Georgia", "Lucida Console", "Segoe UI", "Tahoma", "Times New Roman", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Pro Workstation (Intel)",
+      "weight": 0.08,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i9": 50, "Intel Core i7": 50 },
+        "ram": { "32": 50, "64": 40, "16": 10 },
+        "gpu": { "NVIDIA RTX A4000": 60, "Intel Arc Pro A40": 40 }
+      },
+      "display": { "resolutions": ["3840x2160", "2560x1440"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-GB", "en"] },
+      "fonts": ["Arial", "Calibri", "Calibri Light", "Consolas", "Constantia", "Corbel", "Courier New", "Segoe UI", "Tahoma"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 High-End Laptop (Dell XPS style)",
+      "weight": 0.12,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core Ultra 7": 70, "Intel Core Ultra 9": 30 },
+        "ram": { "16": 60, "32": 40 },
+        "gpu": { "Intel Arc Graphics": 100 }
+      },
+      "display": { "resolutions": ["1920x1200", "3840x2400"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Standard Office Laptop",
+      "weight": 0.20,
+      "platform": "Win32",
+      "os": { "Windows 11": 95, "Windows 10": 5 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 60, "AMD Ryzen 5": 40 },
+        "ram": { "16": 75, "8": 25 },
+        "gpu": { "Intel Iris Xe Graphics": 60, "AMD Radeon Graphics": 40 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["de-DE", "de"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Older Office Laptop",
+      "weight": 0.18,
+      "platform": "Win32",
+      "os": { "Windows 10": 85, "Windows 11": 15 },
+      "hardware": {
+        "cpu": { "Intel Core i5 8th Gen": 70, "Intel Core i7 8th Gen": 30 },
+        "ram": { "8": 60, "16": 40 },
+        "gpu": { "Intel UHD Graphics 620": 100 }
+      },
+      "display": { "resolutions": ["1920x1080", "1366x768"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["fr-FR", "fr"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Times New Roman"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 2-in-1 Touchscreen Laptop (Surface Pro style)",
+      "weight": 0.07,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core Ultra 7": 100 },
+        "ram": { "16": 80, "32": 20 },
+        "gpu": { "Intel Arc Graphics": 100 }
+      },
+      "display": { "resolutions": ["2880x1920"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 10 },
+      "locale": { "languages": ["en-CA", "en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Budget Laptop",
+      "weight": 0.22,
+      "platform": "Win32",
+      "os": { "Windows 11": 90, "Windows 10": 10 },
+      "hardware": {
+        "cpu": { "Intel Core i3": 50, "AMD Ryzen 3": 50 },
+        "ram": { "8": 90, "16": 10 },
+        "gpu": { "Intel UHD Graphics": 50, "AMD Radeon Vega 8": 50 }
+      },
+      "display": { "resolutions": ["1920x1080", "1366x768"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["es-MX", "es-419", "es"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "MacBook Pro 16-inch (M3 Max)",
+      "weight": 0.04,
+      "platform": "MacIntel",
+      "os": { "macOS Sequoia": 70, "macOS Sonoma": 30 },
+      "hardware": {
+        "cpu": { "Apple M3 Max": 100 },
+        "ram": { "36": 50, "48": 30, "96": 20 },
+        "gpu": { "Apple M3 Max GPU": 100 }
+      },
+      "display": { "resolutions": ["3456x2234"], "colorDepth": 30, "pixelDepth": 30, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "MacBook Pro 14-inch (M3 Pro)",
+      "weight": 0.08,
+      "platform": "MacIntel",
+      "os": { "macOS Sequoia": 60, "macOS Sonoma": 40 },
+      "hardware": {
+        "cpu": { "Apple M3 Pro": 100 },
+        "ram": { "18": 70, "36": 30 },
+        "gpu": { "Apple M3 Pro GPU": 100 }
+      },
+      "display": { "resolutions": ["3024x1964"], "colorDepth": 30, "pixelDepth": 30, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en", "ja-JP"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "MacBook Air 15-inch (M3)",
+      "weight": 0.10,
+      "platform": "MacIntel",
+      "os": { "macOS Sequoia": 50, "macOS Sonoma": 50 },
+      "hardware": {
+        "cpu": { "Apple M3": 100 },
+        "ram": { "8": 50, "16": 50 },
+        "gpu": { "Apple M3 GPU": 100 }
+      },
+      "display": { "resolutions": ["2880x1864"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "MacBook Air 13-inch (M2)",
+      "weight": 0.15,
+      "platform": "MacIntel",
+      "os": { "macOS Sonoma": 80, "macOS Ventura": 20 },
+      "hardware": {
+        "cpu": { "Apple M2": 100 },
+        "ram": { "8": 70, "16": 30 },
+        "gpu": { "Apple M2 GPU": 100 }
+      },
+      "display": { "resolutions": ["2560x1664"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-GB", "en"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "iMac 24-inch (M3)",
+      "weight": 0.06,
+      "platform": "MacIntel",
+      "os": { "macOS Sonoma": 90, "macOS Sequoia": 10 },
+      "hardware": {
+        "cpu": { "Apple M3": 100 },
+        "ram": { "8": 60, "16": 40 },
+        "gpu": { "Apple M3 GPU": 100 }
+      },
+      "display": { "resolutions": ["4480x2520"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["de-DE", "de"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Mac mini (M2)",
+      "weight": 0.05,
+      "platform": "MacIntel",
+      "os": { "macOS Sonoma": 80, "macOS Ventura": 20 },
+      "hardware": {
+        "cpu": { "Apple M2": 100 },
+        "ram": { "8": 50, "16": 40, "24": 10 },
+        "gpu": { "Apple M2 GPU": 100 }
+      },
+      "display": { "resolutions": ["1920x1080", "2560x1440"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Intel MacBook Pro (2019)",
+      "weight": 0.04,
+      "platform": "MacIntel",
+      "os": { "macOS Ventura": 60, "macOS Monterey": 40 },
+      "hardware": {
+        "cpu": { "Intel Core i7": 50, "Intel Core i9": 50 },
+        "ram": { "16": 70, "32": 30 },
+        "gpu": { "AMD Radeon Pro 5500M": 50, "Intel UHD Graphics 630": 50 }
+      },
+      "display": { "resolutions": ["3072x1920"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["ko-KR", "ko"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 All-in-One PC",
+      "weight": 0.08,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i7": 60, "AMD Ryzen 7": 40 },
+        "ram": { "16": 80, "32": 20 },
+        "gpu": { "Intel Iris Xe Graphics": 60, "AMD Radeon Graphics": 40 }
+      },
+      "display": { "resolutions": ["1920x1080", "2560x1440"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["zh-CN", "zh"] },
+      "fonts": ["Microsoft YaHei", "SimSun", "Arial", "Calibri", "Segoe UI", "Tahoma"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Kiosk/POS Machine",
+      "weight": 0.02,
+      "platform": "Win32",
+      "os": { "Windows 10": 100 },
+      "hardware": {
+        "cpu": { "Intel Celeron": 80, "Intel Atom": 20 },
+        "ram": { "4": 90, "8": 10 },
+        "gpu": { "Intel HD Graphics": 100 }
+      },
+      "display": { "resolutions": ["1024x768", "1280x800"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 10 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Courier New", "Tahoma"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Content Creator Laptop",
+      "weight": 0.06,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i9": 50, "AMD Ryzen 9": 50 },
+        "ram": { "32": 70, "64": 30 },
+        "gpu": { "NVIDIA GeForce RTX 4070 Laptop": 100 }
+      },
+      "display": { "resolutions": ["2560x1600", "3840x2160"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "MacBook Air (M1, 2020)",
+      "weight": 0.13,
+      "platform": "MacIntel",
+      "os": { "macOS Sonoma": 60, "macOS Ventura": 30, "macOS Monterey": 10 },
+      "hardware": {
+        "cpu": { "Apple M1": 100 },
+        "ram": { "8": 80, "16": 20 },
+        "gpu": { "Apple M1 GPU": 100 }
+      },
+      "display": { "resolutions": ["2560x1600"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["es-ES", "es"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Corporate Desktop",
+      "weight": 0.16,
+      "platform": "Win32",
+      "os": { "Windows 10": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i5 9th Gen": 80, "Intel Core i3 9th Gen": 20 },
+        "ram": { "8": 70, "16": 30 },
+        "gpu": { "Intel UHD Graphics 630": 100 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["pt-BR", "pt"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Times New Roman"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Home Desktop (Prebuilt)",
+      "weight": 0.18,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 50, "AMD Ryzen 5": 50 },
+        "ram": { "16": 80, "8": 20 },
+        "gpu": { "Intel Iris Xe Graphics": 30, "AMD Radeon Graphics": 30, "NVIDIA GeForce RTX 3050": 40 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["it-IT", "it"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Intel iMac (2020)",
+      "weight": 0.03,
+      "platform": "MacIntel",
+      "os": { "macOS Ventura": 70, "macOS Monterey": 30 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 60, "Intel Core i7": 40 },
+        "ram": { "8": 60, "16": 40 },
+        "gpu": { "AMD Radeon Pro 5300": 100 }
+      },
+      "display": { "resolutions": ["5120x2880"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-AU", "en"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Ultrabook (AMD)",
+      "weight": 0.11,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "AMD Ryzen 7": 70, "AMD Ryzen 5": 30 },
+        "ram": { "16": 90, "8": 10 },
+        "gpu": { "AMD Radeon Graphics": 100 }
+      },
+      "display": { "resolutions": ["1920x1080", "2560x1440"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["pl-PL", "pl"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Mini PC",
+      "weight": 0.09,
+      "platform": "Win32",
+      "os": { "Windows 10": 60, "Windows 11": 40 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 70, "AMD Ryzen 5": 30 },
+        "ram": { "8": 50, "16": 50 },
+        "gpu": { "Intel HD Graphics": 70, "AMD Radeon Vega Graphics": 30 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["ru-RU", "ru"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Times New Roman"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Gaming Laptop (Mid-Range)",
+      "weight": 0.14,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i7": 50, "AMD Ryzen 7": 50 },
+        "ram": { "16": 85, "32": 15 },
+        "gpu": { "NVIDIA GeForce RTX 4060 Laptop": 60, "NVIDIA GeForce RTX 4050 Laptop": 40 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Student Laptop",
+      "weight": 0.19,
+      "platform": "Win32",
+      "os": { "Windows 10": 70, "Windows 11": 30 },
+      "hardware": {
+        "cpu": { "Intel Core i3": 50, "AMD Ryzen 3": 50 },
+        "ram": { "8": 95, "4": 5 },
+        "gpu": { "Intel UHD Graphics": 50, "AMD Radeon Vega Graphics": 50 }
+      },
+      "display": { "resolutions": ["1366x768", "1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Times New Roman"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "MacBook Pro 13-inch (M2)",
+      "weight": 0.09,
+      "platform": "MacIntel",
+      "os": { "macOS Sonoma": 80, "macOS Ventura": 20 },
+      "hardware": {
+        "cpu": { "Apple M2": 100 },
+        "ram": { "8": 60, "16": 40 },
+        "gpu": { "Apple M2 GPU": 100 }
+      },
+      "display": { "resolutions": ["2560x1600"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["fr-FR", "fr"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Workstation (AMD Ryzen Threadripper)",
+      "weight": 0.02,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "AMD Ryzen Threadripper": 100 },
+        "ram": { "64": 60, "128": 40 },
+        "gpu": { "NVIDIA GeForce RTX 4090": 50, "AMD Radeon PRO W7800": 50 }
+      },
+      "display": { "resolutions": ["3840x2160"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Old Desktop (Family PC)",
+      "weight": 0.12,
+      "platform": "Win32",
+      "os": { "Windows 10": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i3 7th Gen": 100 },
+        "ram": { "8": 100 },
+        "gpu": { "Intel HD Graphics 630": 100 }
+      },
+      "display": { "resolutions": ["1600x900", "1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["nl-NL", "nl"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Times New Roman"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Mac Pro (2019, Intel)",
+      "weight": 0.01,
+      "platform": "MacIntel",
+      "os": { "macOS Ventura": 80, "macOS Monterey": 20 },
+      "hardware": {
+        "cpu": { "Intel Xeon W": 100 },
+        "ram": { "32": 50, "96": 50 },
+        "gpu": { "AMD Radeon Pro Vega II": 100 }
+      },
+      "display": { "resolutions": ["5120x2880", "6016x3384"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Developer Laptop (Lenovo ThinkPad)",
+      "weight": 0.1,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core Ultra 7": 60, "AMD Ryzen 7 PRO": 40 },
+        "ram": { "32": 80, "16": 20 },
+        "gpu": { "Intel Arc Graphics": 60, "AMD Radeon Graphics": 40 }
+      },
+      "display": { "resolutions": ["1920x1200", "2560x1600"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Consolas", "Cascadia Code", "Fira Code", "Segoe UI", "Calibri"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 High-End Gaming Laptop",
+      "weight": 0.04,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i9 Laptop": 60, "AMD Ryzen 9 Laptop": 40 },
+        "ram": { "32": 80, "64": 20 },
+        "gpu": { "NVIDIA GeForce RTX 4080 Laptop": 60, "NVIDIA GeForce RTX 4090 Laptop": 40 }
+      },
+      "display": { "resolutions": ["2560x1440", "2560x1600"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en", "ko-KR"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Mac Studio (M2 Ultra)",
+      "weight": 0.02,
+      "platform": "MacIntel",
+      "os": { "macOS Sonoma": 90, "macOS Sequoia": 10 },
+      "hardware": {
+        "cpu": { "Apple M2 Ultra": 100 },
+        "ram": { "64": 70, "128": 30 },
+        "gpu": { "Apple M2 Ultra GPU": 100 }
+      },
+      "display": { "resolutions": ["3840x2160", "5120x2880"], "colorDepth": 30, "pixelDepth": 30, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Tablet (Surface Go style)",
+      "weight": 0.05,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Pentium Gold": 50, "Intel Core i3": 50 },
+        "ram": { "8": 90, "4": 10 },
+        "gpu": { "Intel UHD Graphics": 100 }
+      },
+      "display": { "resolutions": ["1920x1280"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 10 },
+      "locale": { "languages": ["en-GB", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 East-Asian Business Laptop",
+      "weight": 0.09,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 70, "Intel Core i7": 30 },
+        "ram": { "16": 90, "8": 10 },
+        "gpu": { "Intel Iris Xe Graphics": 100 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["ja-JP", "ja"] },
+      "fonts": ["MS Gothic", "Meiryo", "Yu Gothic", "Arial", "Segoe UI"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Entry-Level Gaming PC",
+      "weight": 0.11,
+      "platform": "Win32",
+      "os": { "Windows 10": 80, "Windows 11": 20 },
+      "hardware": {
+        "cpu": { "AMD Ryzen 3": 50, "Intel Core i3": 50 },
+        "ram": { "16": 70, "8": 30 },
+        "gpu": { "NVIDIA GeForce GTX 1650": 50, "AMD Radeon RX 6500 XT": 50 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Nordic Office PC",
+      "weight": 0.07,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 60, "AMD Ryzen 5": 40 },
+        "ram": { "16": 90, "32": 10 },
+        "gpu": { "Intel Iris Xe Graphics": 60, "AMD Radeon Graphics": 40 }
+      },
+      "display": { "resolutions": ["1920x1080", "2560x1440"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["sv-SE", "sv", "en-US"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Intel MacBook Air (2018)",
+      "weight": 0.04,
+      "platform": "MacIntel",
+      "os": { "macOS Monterey": 60, "macOS Big Sur": 40 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 100 },
+        "ram": { "8": 80, "16": 20 },
+        "gpu": { "Intel UHD Graphics 617": 100 }
+      },
+      "display": { "resolutions": ["2560x1600"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["zh-TW", "zh"] },
+      "fonts": ["-apple-system", "PingFang TC", "Helvetica Neue", "Lucida Grande", "Menlo"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Enthusiast PC (Older)",
+      "weight": 0.05,
+      "platform": "Win32",
+      "os": { "Windows 10": 90, "Windows 11": 10 },
+      "hardware": {
+        "cpu": { "Intel Core i7 7700K": 100 },
+        "ram": { "16": 60, "32": 40 },
+        "gpu": { "NVIDIA GeForce GTX 1080 Ti": 60, "NVIDIA GeForce GTX 1070": 40 }
+      },
+      "display": { "resolutions": ["2560x1440", "1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 French Standard Laptop",
+      "weight": 0.12,
+      "platform": "Win32",
+      "os": { "Windows 11": 95, "Windows 10": 5 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 70, "AMD Ryzen 5": 30 },
+        "ram": { "16": 80, "8": 20 },
+        "gpu": { "Intel Iris Xe Graphics": 70, "AMD Radeon Graphics": 30 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["fr-FR", "fr", "en-US"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Mac mini (Intel, 2018)",
+      "weight": 0.03,
+      "platform": "MacIntel",
+      "os": { "macOS Ventura": 60, "macOS Monterey": 40 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 70, "Intel Core i7": 30 },
+        "ram": { "8": 50, "16": 30, "32": 20 },
+        "gpu": { "Intel UHD Graphics 630": 100 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["de-DE", "de", "en-US"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo", "San Francisco"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Small Business Desktop",
+      "weight": 0.15,
+      "platform": "Win32",
+      "os": { "Windows 11": 80, "Windows 10": 20 },
+      "hardware": {
+        "cpu": { "Intel Core i3": 50, "AMD Ryzen 3": 50 },
+        "ram": { "8": 70, "16": 30 },
+        "gpu": { "Intel UHD Graphics": 50, "AMD Radeon Vega Graphics": 50 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Times New Roman"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Touchscreen Laptop (HP Envy style)",
+      "weight": 0.06,
+      "platform": "Win32",
+      "os": { "Windows 10": 60, "Windows 11": 40 },
+      "hardware": {
+        "cpu": { "Intel Core i7 11th Gen": 50, "AMD Ryzen 7 5000 Series": 50 },
+        "ram": { "16": 90, "8": 10 },
+        "gpu": { "Intel Iris Xe Graphics": 50, "AMD Radeon Graphics": 50 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 10 },
+      "locale": { "languages": ["en-CA", "en", "fr-CA"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Spanish Standard PC",
+      "weight": 0.13,
+      "platform": "Win32",
+      "os": { "Windows 11": 90, "Windows 10": 10 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 60, "AMD Ryzen 5": 40 },
+        "ram": { "16": 80, "8": 20 },
+        "gpu": { "Intel UHD Graphics": 60, "AMD Radeon Graphics": 40 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["es-ES", "es", "en-US"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Home Theater PC (HTPC)",
+      "weight": 0.03,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "AMD Ryzen 5": 60, "Intel Core i5": 40 },
+        "ram": { "8": 60, "16": 40 },
+        "gpu": { "AMD Radeon Graphics": 60, "Intel Iris Xe Graphics": 40 }
+      },
+      "display": { "resolutions": ["3840x2160", "1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Enterprise Laptop (Dell Latitude)",
+      "weight": 0.14,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Core i7 vPro": 60, "Intel Core i5 vPro": 40 },
+        "ram": { "16": 80, "32": 20 },
+        "gpu": { "Intel Iris Xe Graphics": 100 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 10 Budget All-in-One",
+      "weight": 0.08,
+      "platform": "Win32",
+      "os": { "Windows 10": 85, "Windows 11": 15 },
+      "hardware": {
+        "cpu": { "Intel Pentium Silver": 70, "Intel Celeron": 30 },
+        "ram": { "8": 80, "4": 20 },
+        "gpu": { "Intel UHD Graphics": 100 }
+      },
+      "display": { "resolutions": ["1920x1080"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Times New Roman"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "MacBook Pro 15-inch (2017, Intel)",
+      "weight": 0.03,
+      "platform": "MacIntel",
+      "os": { "macOS Monterey": 70, "macOS Big Sur": 30 },
+      "hardware": {
+        "cpu": { "Intel Core i7": 100 },
+        "ram": { "16": 100 },
+        "gpu": { "AMD Radeon Pro 560": 50, "Intel HD Graphics 630": 50 }
+      },
+      "display": { "resolutions": ["2880x1800"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-GB", "en", "de-DE"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 VR-Ready Gaming PC",
+      "weight": 0.04,
+      "platform": "Win32",
+      "os": { "Windows 11": 90, "Windows 10": 10 },
+      "hardware": {
+        "cpu": { "Intel Core i7": 50, "AMD Ryzen 7": 50 },
+        "ram": { "16": 60, "32": 40 },
+        "gpu": { "NVIDIA GeForce RTX 4070": 60, "NVIDIA GeForce RTX 3080": 40 }
+      },
+      "display": { "resolutions": ["2560x1440"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma", "Verdana"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; VR) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "Windows 11 Thin Client PC (Corporate)",
+      "weight": 0.03,
+      "platform": "Win32",
+      "os": { "Windows 11": 100 },
+      "hardware": {
+        "cpu": { "Intel Celeron": 100 },
+        "ram": { "4": 100 },
+        "gpu": { "Intel UHD Graphics": 100 }
+      },
+      "display": { "resolutions": ["1920x1080", "1440x900"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-US", "en"] },
+      "fonts": ["Arial", "Calibri", "Segoe UI", "Tahoma"],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    },
+    {
+      "name": "iMac 27-inch (2017, Intel)",
+      "weight": 0.02,
+      "platform": "MacIntel",
+      "os": { "macOS Monterey": 60, "macOS Big Sur": 40 },
+      "hardware": {
+        "cpu": { "Intel Core i5": 100 },
+        "ram": { "8": 70, "16": 30 },
+        "gpu": { "AMD Radeon Pro 575": 100 }
+      },
+      "display": { "resolutions": ["5120x2880"], "colorDepth": 24, "pixelDepth": 24, "maxTouchPoints": 0 },
+      "locale": { "languages": ["en-AU", "en-GB", "en"] },
+      "fonts": ["-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Lucida Grande", "Menlo"],
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{CHROME_VERSION} Safari/537.36"
+    }
+  ]
+}
