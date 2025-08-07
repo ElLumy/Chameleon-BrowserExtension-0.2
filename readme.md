@@ -1,6 +1,6 @@
 # 🦎 Chameleon - Advanced Browser Fingerprint Spoofer
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)
 ![Manifest](https://img.shields.io/badge/manifest-v3-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-purple.svg)
 
@@ -40,7 +40,7 @@ Chameleon is a sophisticated Chrome extension that provides advanced protection 
 
 1. **Clone or download** this repository:
 ```bash
-git clone https://github.com/yourusername/chameleon.git
+git clone https://github.com/ellumy/chameleon.git
 cd chameleon
 ```
 
@@ -210,13 +210,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📮 Support
 
-- **Issues**: https://github.com/yourusername/chameleon/issues
-- **Discussions**: https://github.com/yourusername/chameleon/discussions
-- **Wiki**: https://github.com/yourusername/chameleon/wiki
+- **Issues**: https://github.com/ellumy/chameleon/issues
+- **Discussions**: https://github.com/ellumy/chameleon/discussions
+- **Wiki**: https://github.com/yourusername/ellumy/wiki
 
 ## 🔄 Changelog
 
-### Version 1.0.0 (2025-01-27)
+### Version 0.2.0 (2025-01-27)
 - Initial release
 - Core fingerprinting protection
 - Dynamic profile generation
